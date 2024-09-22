@@ -14,4 +14,3 @@ document.querySelector(".shuffleButton").addEventListener("click", function(){
 }
 }
 )
-
