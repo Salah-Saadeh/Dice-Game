@@ -1,13 +1,20 @@
+
 .container {
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
+.headerCon{
+  height: 25vh;
+}
+.diceCon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 body {
@@ -15,16 +22,17 @@ body {
 }
 
 h1 {
-  margin: 30px;
+  margin: 0;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
-  color: #4ECCA3;
+  color: beige;
+  
 }
 
 p {
   font-size: 2rem;
-  color: #4ECCA3;
+  color: beige;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -33,11 +41,9 @@ img {
 }
 
 footer {
-  margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
 }
 
 .shuffleButtonCon{
@@ -48,8 +54,8 @@ footer {
 }
 
 .shuffleButton{
-  background-color: #4ECCA3;
-  color: rgb(255, 255, 255);
+  background-color: beige;
+  color: #232931;
   font-family: 'Lobster', cursive;
   font-size: 2rem;
   padding: 20px 50px;
@@ -59,4 +65,24 @@ footer {
 }
 .shuffleButton:hover{
   cursor: pointer;
+}
+@media(max-width:450px){
+ 
+  .container{
+    gap: 50px;
+  }
+ 
+  .headerCon{
+    height: 10vh;
+  }
+  footer{
+  position: absolute;
+  bottom: 10px;
+ }
+  
+  h1 {
+    width: 100%;
+    font-size: 50px;
+
+  }
 }
